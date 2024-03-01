@@ -21,6 +21,18 @@ The figures below shows the loss convergence profile for different choice of lea
 <img width="491" alt="image" src="https://github.com/Sachin-Bharadwaj/TSAI-S6/assets/26499326/def730ba-e5b6-42aa-97cc-2bab535aaf2e"> <br>
 <img width="492" alt="image" src="https://github.com/Sachin-Bharadwaj/TSAI-S6/assets/26499326/52934c4a-643c-45ab-a91b-5f5538899204"> <br>
 
+## Part-2
+This assignment is on training a network with less than 20K parameters and having test accuracy > 99.4% on MNIST dataset <br>
+General theme in building this type of neural network is to only use Conv layers as far as possible as they take less parameters compared to fully connected network. Another thing is to build a receptive field of ~ 28x28 as MNIST images are 28x28 in size. We do not need more than 28x28 since dataset does not include partial hidden digits. We start with increasing channels to 8 upfront and build up receptive field until 7x7 (enough for MNIST dataset) before using maxpool layer to further increase the receptive field in subsequent conv layers. Finally we use 1x1 conv in the end to output the scores for the classes. <br>
+<img width="386" alt="image" src="https://github.com/Sachin-Bharadwaj/TSAI-S6/assets/26499326/51b5ba80-dfa5-45e6-ad80-54a32b94279d"> <br>
+The network has less than 20k parameters. <br>
+Here is the test accuracy for last few epochs of training: 
+<img width="727" alt="image" src="https://github.com/Sachin-Bharadwaj/TSAI-S6/assets/26499326/974641f3-c4e6-4d26-a88d-9d8522ab7424">
+
+
+
+
+
 
 
 
