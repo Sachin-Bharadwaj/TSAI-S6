@@ -1,4 +1,5 @@
 # TSAI-S6
+## Part-1
 
 Back propogation on a simple neural network assuming same data point is repeated again and again (just for understanding)
 <img width="531" alt="image" src="https://github.com/Sachin-Bharadwaj/TSAI-S6/assets/26499326/6e74e155-d9b9-4ede-b640-5188f954f703"> <br>
